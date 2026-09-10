@@ -1,33 +1,30 @@
-name: MELANDIX Data Automation
+name: Pi2Fiat Data Engine
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
-  workflow_dispatch:
-
-permissions:
-  contents: write
+    - cron: '*/30 * * * *' # Runs every 30 minutes
+  workflow_dispatch: # Lets you manually trigger it
 
 jobs:
-  update-data:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Repository
+      - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
 
-      - name: Run Fetch Script
+      - name: Fetch Live Data
         run: node fetch-data.js
 
       - name: Commit and Push Changes
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "melandix-bot"
+          git config --global user.email "bot@melandix.internal"
           git add feed.json
-          git commit -m "Auto-update MELANDIX data feed" || exit 0
-          git push
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update feed data: $(date -u +'%Y-%m-%dT%H:%M:%SZ')" && git push)
           
