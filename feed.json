@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-10T05:37:01.916Z",
+  "lastUpdated": "2026-09-10T11:32:57.548Z",
   "rates": {
     "USD": 1,
     "AED": 3.6725,
@@ -168,27 +168,31 @@
     "ZWG": 26.6908,
     "ZWL": 26.6908
   },
+  "benchmarks": {
+    "BTCUSDT": "0.00",
+    "ETHUSDT": "0.00"
+  },
   "news": [
     {
-      "id": "news_1789018621916_1",
+      "id": "news_1789039977548_1",
       "category": "Health News",
       "title": "Global Health Protocols: Safeguarding Pioneer Wellness in 2026",
       "source": "MELANDIX Intelligence"
     },
     {
-      "id": "news_1789018621916_2",
+      "id": "news_1789039977548_2",
       "category": "Market Wealth",
       "title": "Market Expansion: Fiat Corridors Strengthening for GCV Integration",
       "source": "MELANDIX Intelligence"
     },
     {
-      "id": "news_1789018621916_3",
+      "id": "news_1789039977548_3",
       "category": "Asset Defense",
       "title": "Security Alert: Best Practices for Cold Wallet Storage Verification",
       "source": "MELANDIX Intelligence"
     },
     {
-      "id": "news_1789018621916_4",
+      "id": "news_1789039977548_4",
       "category": "PI News",
       "title": "Network Diagnostics: Node Synchronization Reaching All-Time Highs",
       "source": "MELANDIX Intelligence"
