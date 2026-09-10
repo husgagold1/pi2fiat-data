@@ -2,14 +2,35 @@ const fs = require('fs');
 
 async function updateData() {
     try {
-        console.log("MELANDIX Engine waking up...");
+        console.log("MELANDIX Engine waking up (Keyless Mode)...");
 
-        // 1. FETCH LIVE GLOBAL RATES
-        const rateRes = await fetch('https://open.er-api.com/v6/latest/USD');
-        const rateData = await rateRes.json();
+        // 1. FETCH FIAT RATES (Free Public API)
+        let fiatRates = {};
+        try {
+            const openRes = await fetch('https://open.er-api.com/v6/latest/USD');
+            const openData = await openRes.json();
+            fiatRates = openData.rates;
+            console.log("Fiat rates fetched successfully.");
+        } catch (err) {
+            console.error("Fiat fetch failed:", err.message);
+        }
 
-        // 2. GENERATE INTELLIGENCE FEED
-        // (We are using high-tier MELANDIX placeholders for MVP testing before connecting a paid news API)
+        // 2. FETCH BINANCE CRYPTO BENCHMARKS (Public Endpoint)
+        let cryptoBenchmarks = {};
+        try {
+            const binanceRes = await fetch('https://api.binance.com/api/v3/ticker/price?symbols=["BTCUSDT","ETHUSDT"]');
+            const binanceData = await binanceRes.json();
+            
+            binanceData.forEach(item => {
+                cryptoBenchmarks[item.symbol] = parseFloat(item.price).toFixed(2);
+            });
+            console.log("Crypto benchmarks fetched successfully.");
+        } catch (err) {
+            console.warn("Binance fetch issue:", err.message);
+            cryptoBenchmarks = { BTCUSDT: "0.00", ETHUSDT: "0.00" };
+        }
+
+        // 3. CURATED INTEL FEED (Placeholders for MVP)
         const newsFeed = [
             {
                 id: "news_" + Date.now() + "_1",
@@ -37,19 +58,20 @@ async function updateData() {
             }
         ];
 
-        // 3. PACKAGE THE DATA
+        // 4. PACKAGE FINAL PAYLOAD
         const finalPayload = {
             lastUpdated: new Date().toISOString(),
-            rates: rateData.rates,
+            rates: fiatRates,
+            benchmarks: cryptoBenchmarks,
             news: newsFeed
         };
 
-        // 4. SAVE TO STATIC FILE
         fs.writeFileSync('feed.json', JSON.stringify(finalPayload, null, 2));
-        console.log("Update complete. feed.json successfully generated.");
+        console.log("Update complete. feed.json successfully populated!");
 
     } catch (error) {
         console.error("Critical Engine Failure:", error);
+        process.exit(1);
     }
 }
 
