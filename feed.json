@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-11T18:58:49.701Z",
+  "lastUpdated": "2026-09-11T19:40:11.418Z",
   "rates": {
     "USD": 1,
     "AED": 3.6725,
@@ -174,36 +174,36 @@
   },
   "news": [
     {
-      "id": "news_1789153129701_1",
-      "category": "Health News",
-      "title": "Men Above 40: Why Sitting While Urinating Is Better",
-      "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=600",
-      "source": "MELANDIX Intelligence",
-      "fullNews": "Medical research indicates that for men over the age of 40, sitting while urinating helps relax the pelvic floor and abdominal muscles. This allows the bladder to empty more completely and reduces strain on an enlarging prostate, promoting better long-term urinary and bladder health."
-    },
-    {
+      "id": "news_1789155611418_1",
       "category": "Market Wealth",
-      "id": "news_1789153129701_2",
-      "title": "Global Fiat Corridors Preparing Liquidity Rails",
+      "title": "Market Liquidity Expanding",
       "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600",
-      "source": "MELANDIX Intelligence",
-      "fullNews": "Cross-border financial systems and regional liquidity corridors are rapidly adopting modern automated settlement protocols. Developing deep, decentralized liquidity networks is critical for ensuring seamless conversion between emerging digital assets and local fiat currencies."
+      "source": "CryptoCompare",
+      "fullNews": "Global market liquidity continues to shift toward digital utility assets."
     },
     {
+      "id": "news_1789155611418_2",
       "category": "Asset Defense",
-      "id": "news_1789153129701_3",
-      "title": "The 24-Word Rule: Guarding Your Passphrase",
+      "title": "Security Alert: Defend Your Wallet",
       "image": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=600",
-      "source": "MELANDIX Intelligence",
-      "fullNews": "Your 24-word secret passphrase is the only key to your wallet. Neither the Core Team nor official administrators will ever ask you to enter it on external websites, forms, or customer support chats. Write it down physically on paper and store it securely offline."
+      "source": "CryptoCompare",
+      "fullNews": "Always protect your 24-word passphrase and verify official domain signatures."
     },
     {
+      "id": "news_1789155611418_3",
       "category": "PI News",
-      "id": "news_1789153129701_4",
-      "title": "Regulatory Milestones & Open Network Expansion",
+      "title": "Pi Network Global Ecosystem Expansion",
       "image": "https://images.unsplash.com/photo-1621504450181-5d156f065317?auto=format&fit=crop&w=600",
-      "source": "MELANDIX Intelligence",
-      "fullNews": "Decentralized utility platforms and digital currency frameworks continue to gain momentum with expanding developer ecosystems and peer-to-peer commerce. Global regulatory developments are paving the way for standardized compliance, driving ecosystem maturity toward open network adoption."
+      "source": "Google News",
+      "fullNews": "Network milestones and developer ecosystems continue to mature."
+    },
+    {
+      "id": "news_1789155611418_4",
+      "category": "Health News",
+      "title": "As diseases loom, CDC's response to measles deaths stirs fears about agency's reliability - NPR",
+      "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=600",
+      "source": "Health Journal",
+      "fullNews": "\n\nAs diseases loom, CDC's response to measles deaths stirs fears about agency's reliability  NPR\n\n4 fully vaccinated people in Pa. are sick with measles, including 1 in Lancaster County  LancasterOnline\n\nCoroner shares details on 2 infant deaths amid Pennsylvania measles outbreak  usatoday.com\n\nOpinion | What Pennsylvania’s measles response laid bare  The Washington Post\n\nPennsylvania leads the nation in measles infections and hospitalizations as outbreak intensifies  Pittsburgh Post-Gazette\n"
     }
   ]
 }
