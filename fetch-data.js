@@ -29,42 +29,66 @@ async function updateData() {
             console.warn("Binance fetch issue:", err.message);
             cryptoBenchmarks = { BTCUSDT: "0.00", ETHUSDT: "0.00" };
         }
+        
+    // 3. FETCH LIVE NEWS INTELLIGENCE
+async function fetchLiveNews() {
+    try {
+        console.log("Fetching live intel from APIs...");
+        
+        const cryptoRes = await fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=EN");
+        const cryptoData = await cryptoRes.json();
+        const cryptoArticles = cryptoData.Data || [];
 
-        // 3. CURATED INTEL FEED (Placeholders for MVP)
-        const newsFeed = [
-    {
-        id: "news_" + Date.now() + "_1",
-        category: "Health News",
-        title: "Men Above 40: Why Sitting While Urinating Is Better",
-        image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=600",
-        source: "MELANDIX Intelligence",
-        fullNews: "Medical research indicates that for men over the age of 40, sitting while urinating helps relax the pelvic floor and abdominal muscles. This allows the bladder to empty more completely and reduces strain on an enlarging prostate, promoting better long-term urinary and bladder health."
-    },
-    {
-        category: "Market Wealth",
-        id: "news_" + Date.now() + "_2",
-        title: "Global Fiat Corridors Preparing Liquidity Rails",
-        image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600",
-        source: "MELANDIX Intelligence",
-        fullNews: "Cross-border financial systems and regional liquidity corridors are rapidly adopting modern automated settlement protocols. Developing deep, decentralized liquidity networks is critical for ensuring seamless conversion between emerging digital assets and local fiat currencies."
-    },
-    {
-        category: "Asset Defense",
-        id: "news_" + Date.now() + "_3",
-        title: "The 24-Word Rule: Guarding Your Passphrase",
-        image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=600",
-        source: "MELANDIX Intelligence",
-        fullNews: "Your 24-word secret passphrase is the only key to your wallet. Neither the Core Team nor official administrators will ever ask you to enter it on external websites, forms, or customer support chats. Write it down physically on paper and store it securely offline."
-    },
-    {
-        category: "PI News",
-        id: "news_" + Date.now() + "_4",
-        title: "Regulatory Milestones & Open Network Expansion",
-        image: "https://images.unsplash.com/photo-1621504450181-5d156f065317?auto=format&fit=crop&w=600",
-        source: "MELANDIX Intelligence",
-        fullNews: "Decentralized utility platforms and digital currency frameworks continue to gain momentum with expanding developer ecosystems and peer-to-peer commerce. Global regulatory developments are paving the way for standardized compliance, driving ecosystem maturity toward open network adoption."
+        const piRes = await fetch("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fnews.google.com%2Frss%2Fsearch%3Fq%3DPi%2BNetwork%2BCrypto%26hl%3Den-US%26gl%3DUS%26ceid%3DUS%3Aen");
+        const piData = await piRes.json();
+        const piArticles = piData.items || [];
+
+        const healthRes = await fetch("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fnews.google.com%2Frss%2Fheadlines%2Fsection%2Ftopic%2FHEALTH%3Fhl%3Den-US%26gl%3DUS%26ceid%3DUS%3Aen");
+        const healthData = await healthRes.json();
+        const healthArticles = healthData.items || [];
+
+        return [
+            {
+                id: "news_" + Date.now() + "_1",
+                category: "Market Wealth",
+                title: cryptoArticles[0]?.title || "Market Liquidity Expanding",
+                image: cryptoArticles[0]?.imageurl || "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600",
+                source: cryptoArticles[0]?.source_info?.name || "CryptoCompare",
+                fullNews: cryptoArticles[0]?.body || "Global market liquidity continues to shift toward digital utility assets."
+            },
+            {
+                id: "news_" + Date.now() + "_2",
+                category: "Asset Defense",
+                title: cryptoArticles[1]?.title || "Security Alert: Defend Your Wallet",
+                image: cryptoArticles[1]?.imageurl || "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=600",
+                source: cryptoArticles[1]?.source_info?.name || "CryptoCompare",
+                fullNews: cryptoArticles[1]?.body || "Always protect your 24-word passphrase and verify official domain signatures."
+            },
+            {
+                id: "news_" + Date.now() + "_3",
+                category: "PI News",
+                title: piArticles[0]?.title || "Pi Network Global Ecosystem Expansion",
+                image: "https://images.unsplash.com/photo-1621504450181-5d156f065317?auto=format&fit=crop&w=600",
+                source: piArticles[0]?.author || "Google News",
+                fullNews: (piArticles[0]?.description || "Network milestones and developer ecosystems continue to mature.").replace(/(<([^>]+)>)/gi, "")
+            },
+            {
+                id: "news_" + Date.now() + "_4",
+                category: "Health News",
+                title: healthArticles[0]?.title || "Trader Wellness & Performance Habits",
+                image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=600",
+                source: healthArticles[0]?.author || "Health Journal",
+                fullNews: (healthArticles[0]?.description || "Maintaining physical conditioning and recovery protocols improves mental stamina.").replace(/(<([^>]+)>)/gi, "")
+            }
+        ];
+    } catch (error) {
+        console.error("Failed to fetch live news:", error);
+        return [];
     }
-];
+}
+
+  
+    const newsFeed = await fetchLiveNews();
 
 
         // 4. PACKAGE FINAL PAYLOAD
