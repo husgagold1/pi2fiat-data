@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-11T06:24:14.209Z",
+  "lastUpdated": "2026-09-11T11:40:22.833Z",
   "rates": {
     "USD": 1,
     "AED": 3.6725,
@@ -174,28 +174,36 @@
   },
   "news": [
     {
-      "id": "news_1789107854209_1",
+      "id": "news_1789126822833_1",
       "category": "Health News",
-      "title": "Global Health Protocols: Safeguarding Pioneer Wellness in 2026",
-      "source": "MELANDIX Intelligence"
+      "title": "Men Above 40: Why Sitting While Urinating Is Better",
+      "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=600",
+      "source": "MELANDIX Intelligence",
+      "fullNews": "Medical research indicates that for men over the age of 40, sitting while urinating helps relax the pelvic floor and abdominal muscles. This allows the bladder to empty more completely and reduces strain on an enlarging prostate, promoting better long-term urinary and bladder health."
     },
     {
-      "id": "news_1789107854209_2",
       "category": "Market Wealth",
-      "title": "Market Expansion: Fiat Corridors Strengthening for GCV Integration",
-      "source": "MELANDIX Intelligence"
+      "id": "news_1789126822833_2",
+      "title": "Global Fiat Corridors Preparing Liquidity Rails",
+      "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600",
+      "source": "MELANDIX Intelligence",
+      "fullNews": "Cross-border financial systems and regional liquidity corridors are rapidly adopting modern automated settlement protocols. Developing deep, decentralized liquidity networks is critical for ensuring seamless conversion between emerging digital assets and local fiat currencies."
     },
     {
-      "id": "news_1789107854209_3",
       "category": "Asset Defense",
-      "title": "Security Alert: Best Practices for Cold Wallet Storage Verification",
-      "source": "MELANDIX Intelligence"
+      "id": "news_1789126822833_3",
+      "title": "The 24-Word Rule: Guarding Your Passphrase",
+      "image": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=600",
+      "source": "MELANDIX Intelligence",
+      "fullNews": "Your 24-word secret passphrase is the only key to your wallet. Neither the Core Team nor official administrators will ever ask you to enter it on external websites, forms, or customer support chats. Write it down physically on paper and store it securely offline."
     },
     {
-      "id": "news_1789107854209_4",
       "category": "PI News",
-      "title": "Network Diagnostics: Node Synchronization Reaching All-Time Highs",
-      "source": "MELANDIX Intelligence"
+      "id": "news_1789126822833_4",
+      "title": "Regulatory Milestones & Open Network Expansion",
+      "image": "https://images.unsplash.com/photo-1621504450181-5d156f065317?auto=format&fit=crop&w=600",
+      "source": "MELANDIX Intelligence",
+      "fullNews": "Decentralized utility platforms and digital currency frameworks continue to gain momentum with expanding developer ecosystems and peer-to-peer commerce. Global regulatory developments are paving the way for standardized compliance, driving ecosystem maturity toward open network adoption."
     }
   ]
 }
