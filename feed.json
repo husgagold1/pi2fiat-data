@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-11T15:53:54.439Z",
+  "lastUpdated": "2026-09-11T18:58:49.701Z",
   "rates": {
     "USD": 1,
     "AED": 3.6725,
@@ -174,7 +174,7 @@
   },
   "news": [
     {
-      "id": "news_1789142034439_1",
+      "id": "news_1789153129701_1",
       "category": "Health News",
       "title": "Men Above 40: Why Sitting While Urinating Is Better",
       "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=600",
@@ -183,7 +183,7 @@
     },
     {
       "category": "Market Wealth",
-      "id": "news_1789142034439_2",
+      "id": "news_1789153129701_2",
       "title": "Global Fiat Corridors Preparing Liquidity Rails",
       "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600",
       "source": "MELANDIX Intelligence",
@@ -191,7 +191,7 @@
     },
     {
       "category": "Asset Defense",
-      "id": "news_1789142034439_3",
+      "id": "news_1789153129701_3",
       "title": "The 24-Word Rule: Guarding Your Passphrase",
       "image": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=600",
       "source": "MELANDIX Intelligence",
@@ -199,7 +199,7 @@
     },
     {
       "category": "PI News",
-      "id": "news_1789142034439_4",
+      "id": "news_1789153129701_4",
       "title": "Regulatory Milestones & Open Network Expansion",
       "image": "https://images.unsplash.com/photo-1621504450181-5d156f065317?auto=format&fit=crop&w=600",
       "source": "MELANDIX Intelligence",
