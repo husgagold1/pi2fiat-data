@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-11T21:40:00.747Z",
+  "lastUpdated": "2026-09-11T23:52:50.252Z",
   "rates": {
     "USD": 1,
     "AED": 3.6725,
@@ -174,7 +174,7 @@
   },
   "news": [
     {
-      "id": "news_1789162800746_1",
+      "id": "news_1789170770252_1",
       "category": "Market Wealth",
       "title": "Market Liquidity Expanding",
       "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600",
@@ -182,7 +182,7 @@
       "fullNews": "Global market liquidity continues to shift toward digital utility assets."
     },
     {
-      "id": "news_1789162800746_2",
+      "id": "news_1789170770252_2",
       "category": "Asset Defense",
       "title": "Security Alert: Defend Your Wallet",
       "image": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=600",
@@ -190,7 +190,7 @@
       "fullNews": "Always protect your 24-word passphrase and verify official domain signatures."
     },
     {
-      "id": "news_1789162800746_3",
+      "id": "news_1789170770252_3",
       "category": "PI News",
       "title": "Pi Network eyes $0.10 breakout amid mixed market sentiment - FXStreet",
       "image": "https://images.unsplash.com/photo-1621504450181-5d156f065317?auto=format&fit=crop&w=600",
@@ -198,7 +198,7 @@
       "fullNews": "\nPi Network eyes $0.10 breakout amid mixed market sentiment  FXStreet"
     },
     {
-      "id": "news_1789162800747_4",
+      "id": "news_1789170770252_4",
       "category": "Health News",
       "title": "As diseases loom, CDC's response to measles deaths stirs fears about agency's reliability - NPR",
       "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=600",
