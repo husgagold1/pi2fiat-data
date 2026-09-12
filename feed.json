@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-12T12:17:04.132Z",
+  "lastUpdated": "2026-09-12T15:43:26.526Z",
   "rates": {
     "USD": 1,
     "AED": 3.6725,
@@ -174,7 +174,7 @@
   },
   "news": [
     {
-      "id": "news_1789215424132_1",
+      "id": "news_1789227806526_1",
       "category": "Market Wealth",
       "title": "Market Liquidity Expanding",
       "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600",
@@ -182,7 +182,7 @@
       "fullNews": "Global market liquidity continues to shift toward digital utility assets."
     },
     {
-      "id": "news_1789215424132_2",
+      "id": "news_1789227806526_2",
       "category": "Asset Defense",
       "title": "Security Alert: Defend Your Wallet",
       "image": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=600",
@@ -190,7 +190,7 @@
       "fullNews": "Always protect your 24-word passphrase and verify official domain signatures."
     },
     {
-      "id": "news_1789215424132_3",
+      "id": "news_1789227806526_3",
       "category": "PI News",
       "title": "Pi Network (PI) Keeps Struggling Under $0.10: 3 AIs Predict Its Maximum Price for 2026 - CryptoPotato",
       "image": "https://images.unsplash.com/photo-1621504450181-5d156f065317?auto=format&fit=crop&w=600",
@@ -198,12 +198,12 @@
       "fullNews": "\nPi Network (PI) Keeps Struggling Under $0.10: 3 AIs Predict Its Maximum Price for 2026  CryptoPotato"
     },
     {
-      "id": "news_1789215424132_4",
+      "id": "news_1789227806526_4",
       "category": "Health News",
-      "title": "As diseases loom, CDC's response to measles deaths stirs fears about agency's reliability - NPR",
+      "title": "Strange symptom and a \"weird\" referral led to a woman's Stage 4 cancer diagnosis: \"Saved my life\" - CBS News",
       "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=600",
       "source": "Health Journal",
-      "fullNews": "\n\nAs diseases loom, CDC's response to measles deaths stirs fears about agency's reliability  NPR\n\nCoroner shares details on 2 infant deaths amid Pennsylvania measles outbreak  USA Today\n\nPa. reports measles cases in 4 vaccinated residents. These rare cases account for less than 1% of the spreading outbreak  Inquirer.com\n\nOpinion | What Pennsylvania’s measles response laid bare  The Washington Post\n\n4 fully vaccinated people in Pa. are sick with measles, including 1 in Lancaster County  LancasterOnline\n"
+      "fullNews": "\nStrange symptom and a \"weird\" referral led to a woman's Stage 4 cancer diagnosis: \"Saved my life\"  CBS News"
     }
   ]
 }
