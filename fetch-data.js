@@ -47,19 +47,20 @@ async function fetchLiveNews() {
         const cryptoData = await cryptoRes.json();
         const cryptoArticles = cryptoData.Data || [];
 
-        // 2. Fetch Pi Ecosystem News (Excluding Exchange/IOU Noise)
-        const piQuery = encodeURIComponent('"Pi Network" mainnet OR dApps OR hackathon OR testnet OR merchant -IOU -trading');
-        const piRes = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(`https://news.google.com/rss/search?q=${piQuery}&hl=en-US&gl=US&ceid=US:en`)}`);
+                // 2. Fetch Pi Ecosystem News (Clean Query)
+        const piUrl = "https://news.google.com/rss/search?q=Pi+Network+mainnet+ecosystem&hl=en-US&gl=US&ceid=US:en";
+        const piRes = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(piUrl)}`);
         const piData = await piRes.json();
         const piArticles = piData.items || [];
 
-        // 3. Fetch Health & Lifestyle News (Fruits, Diet, Exercise)
-        const healthQuery = encodeURIComponent('"fruit benefits" OR "balanced diet" OR "exercise habits" OR "wellness"');
-        const healthRes = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(`https://news.google.com/rss/search?q=${healthQuery}&hl=en-US&gl=US&ceid=US:en`)}`);
+        // 3. Fetch Health & Lifestyle News (Clean Query)
+        const healthUrl = "https://news.google.com/rss/search?q=fruits+health+benefits+nutrition+diet&hl=en-US&gl=US&ceid=US:en";
+        const healthRes = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(healthUrl)}`);
         const healthData = await healthRes.json();
         const healthArticles = healthData.items || [];
-
-        const newsFeed = [];
+        
+        
+ const newsFeed = [];
 
         // Helper to map and take top 5
         const addCategoryItems = (articles, categoryName, defaultImg, fallbacks = null) => {
