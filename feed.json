@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-13T00:37:31.532Z",
+  "lastUpdated": "2026-09-13T04:56:50.716Z",
   "rates": {
     "USD": 1,
     "AED": 3.6725,
@@ -172,38 +172,5 @@
     "BTCUSDT": "0.00",
     "ETHUSDT": "0.00"
   },
-  "news": [
-    {
-      "id": "news_1789259851532_1",
-      "category": "Market Wealth",
-      "title": "Market Liquidity Expanding",
-      "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=600",
-      "source": "CryptoCompare",
-      "fullNews": "Global market liquidity continues to shift toward digital utility assets."
-    },
-    {
-      "id": "news_1789259851532_2",
-      "category": "Asset Defense",
-      "title": "Security Alert: Defend Your Wallet",
-      "image": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=600",
-      "source": "CryptoCompare",
-      "fullNews": "Always protect your 24-word passphrase and verify official domain signatures."
-    },
-    {
-      "id": "news_1789259851532_3",
-      "category": "PI News",
-      "title": "Pi Network (PI) Keeps Struggling Under $0.10: 3 AIs Predict Its Maximum Price for 2026 - CryptoPotato",
-      "image": "https://images.unsplash.com/photo-1621504450181-5d156f065317?auto=format&fit=crop&w=600",
-      "source": "Google News",
-      "fullNews": "\nPi Network (PI) Keeps Struggling Under $0.10: 3 AIs Predict Its Maximum Price for 2026  CryptoPotato"
-    },
-    {
-      "id": "news_1789259851532_4",
-      "category": "Health News",
-      "title": "Alcohol-linked cancer deaths have doubled in recent decades. What to know about risk. - The Washington Post",
-      "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=600",
-      "source": "Health Journal",
-      "fullNews": "\n\nAlcohol-linked cancer deaths have doubled in recent decades. What to know about risk.  The Washington Post\n\nAlcohol tied to surprising cancer death pattern in adults under 55, researchers find  Fox News\n\nJust one drink a day may increase the risk of dying from numerous cancers  The Atlanta Voice\n\nCancer Deaths Attributable to Alcohol Have Doubled Since 1990  Gastroenterology &amp; Endoscopy News\n\nEven Light Drinking Can Raise Cancer Risk After 50  AARP\n"
-    }
-  ]
+  "news": []
 }
