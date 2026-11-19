@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-19T05:58:37.387Z",
+  "lastUpdated": "2026-11-19T15:37:46.131Z",
   "rates": {
     "USD": 1,
     "AED": 3.6725,
@@ -169,8 +169,8 @@
     "ZWL": 26.5639
   },
   "benchmarks": {
-    "BTCUSDT": "63330.82",
-    "ETHUSDT": "1799.61"
+    "BTCUSDT": "0.00",
+    "ETHUSDT": "0.00"
   },
   "news": []
 }
